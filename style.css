@@ -1,0 +1,89 @@
+:root {
+    --label-bg-color: rgba(0, 0, 0, 0.35);
+}
+
+html, body {
+    min-height: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+body {
+    background-color: rgb(35, 0, 35);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: rgb(240, 240, 240);
+    text-align: center;
+
+    font-family: 'Cairo';
+    font-weight: 700;
+}
+
+#mainContent {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+#heads {
+    max-width: 1280px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    flex-wrap: wrap;
+}
+
+.playerAvatar {
+    width: 64px;
+    padding: 8px;
+    border-radius: 12px 12px 12px 12px;
+    
+    transform: scale(1);
+    transition: transform 0.04s ease-in-out;
+    
+    filter: drop-shadow(0px 0px 0.35rem rgba(0, 0, 0, 0.8));
+}
+
+.playerAvatar:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.label {
+    background-color: var(--label-bg-color);
+    padding: 8px;
+    width: fit-content;
+    
+    border-radius: 12px 12px 12px 12px;
+}
+
+#onlinePlayersLabel {
+    margin: auto;
+    margin-bottom: 64px;
+}
+
+.playerNameLabel {
+    background-color: rgba(0, 0, 0, 0.80);
+    display: none;
+    position: absolute;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    transform: translateY(-68px);
+    z-index: 1;
+}
+
+.playerHead {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+}
