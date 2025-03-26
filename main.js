@@ -10,12 +10,12 @@ var playerCount = 0;
 var players = [];
 
 function onLoad() {
-    let _bg = Math.floor(Math.random()*5)+1;
-    document.body.style.backgroundImage = `url(assets/bg${_bg}.jpg)`;
-    document.body.style.setProperty("--label-bg-color", `rgba(${textColors[_bg-1]}, 0.35)`);
+    // let _bg = Math.floor(Math.random()*5)+1;
+    // document.body.style.backgroundImage = `url(assets/bg${_bg}.jpg)`;
+    // document.body.style.setProperty("--label-bg-color", `rgba(${textColors[_bg-1]}, 0.35)`);
 
-    getPlayers();
-    setInterval(getPlayers, 12000);
+    // getPlayers();
+    // setInterval(getPlayers, 12000);
 }
 
 function getPlayers() {
